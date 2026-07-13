@@ -14,7 +14,7 @@ export default function HistoryPage({ onViewResult }) {
 
   const fetchHistory = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/history");
+const res = await fetch("https://ai-investment-agent-7w75.onrender.com/api/history");
       if (!res.ok) throw new Error("Failed to fetch history");
       const data = await res.json();
       setHistory(data);
