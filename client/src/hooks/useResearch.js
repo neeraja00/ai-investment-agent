@@ -3,7 +3,7 @@
 
 import { useState, useCallback, useRef } from "react";
 
-const API_URL = "/api/research";
+const API_URL = "https://ai-investment-agent-7w75.onrender.com/api/research";
 
 export function useResearch() {
   const [state, setState] = useState({
